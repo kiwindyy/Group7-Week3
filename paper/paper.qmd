@@ -1,0 +1,68 @@
+---
+title: "Week3"
+subtitle: "Group7"
+author: 
+  - Wendy Yuan
+thanks: "Code and data are available at: LINK."
+date: today
+date-format: long
+abstract: "This is the activity reflection from the third week in sta304. We learned about static communication & writing reports this week."
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+
+data <- read_csv(here::here("data/analysis_data/analysis_data.csv"))
+
+```
+
+
+# Introduction
+
+You can and should cross-reference sections and sub-sections. We use @Rcode, @opendatatorotno, and @rohan.
+
+The remainder of this paper is structured as follows. @sec-mydatasection
+
+# Data {#sec-mydatasection}
+
+Some of our data is of marriage (@fig-marriage), from @opendatatoronto.
+
+```{r}
+#| label: fig-marriage
+#| fig-cap: Bills of penguins
+#| echo: false
+
+data |> 
+  ggplot(aes(x = date, y = marriage_licenses)) +
+  geom_point()
+
+```
+
+
+@opendatatoronto provided data about marriages. Using this data, I generated a graph @fig-marriage. It can be seen that the x axis is the date and the y axis is the number of marriage licenses handed out per month. The graph displays that the marriage licenses given out are more sporadic while prior to covid there was a sin pattern.  
+
+
+\newpage
+
+\appendix
+
+# Appendix {-}
+
+
+# Additional data details
+
+
+
+\newpage
+
+
+# References
+
+
